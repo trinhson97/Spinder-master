@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Spinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jLi-7I-tbD">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2kl-6d-54J">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                    </imageView>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="KTR-Mb-hR1">
+                                        <rect key="frame" x="177.5" y="313.5" width="20" height="20"/>
+                                    </activityIndicatorView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tdd-ol-X8e">
+                                        <rect key="frame" x="123" y="595" width="129" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <state key="normal" title="PornHub.com">
+                                            <color key="titleColor" red="1" green="0.22680616849999999" blue="0.91065464519999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="actionImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sVl-AK-9uu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="2kl-6d-54J" firstAttribute="leading" secondItem="jLi-7I-tbD" secondAttribute="leading" id="7v4-fI-KSF"/>
+                                    <constraint firstAttribute="bottom" secondItem="Tdd-ol-X8e" secondAttribute="bottom" constant="16" id="H9T-Vd-LC0"/>
+                                    <constraint firstItem="KTR-Mb-hR1" firstAttribute="centerX" secondItem="jLi-7I-tbD" secondAttribute="centerX" id="IeD-HW-o1X"/>
+                                    <constraint firstAttribute="trailing" secondItem="2kl-6d-54J" secondAttribute="trailing" id="Jiw-Tk-uRm"/>
+                                    <constraint firstItem="KTR-Mb-hR1" firstAttribute="centerY" secondItem="jLi-7I-tbD" secondAttribute="centerY" id="MrO-yd-UGM"/>
+                                    <constraint firstItem="2kl-6d-54J" firstAttribute="centerY" secondItem="jLi-7I-tbD" secondAttribute="centerY" id="bXl-0e-G1G"/>
+                                    <constraint firstItem="2kl-6d-54J" firstAttribute="centerX" secondItem="jLi-7I-tbD" secondAttribute="centerX" id="l2K-qX-Lpf"/>
+                                    <constraint firstItem="Tdd-ol-X8e" firstAttribute="centerX" secondItem="jLi-7I-tbD" secondAttribute="centerX" id="vUX-fd-v5l"/>
+                                    <constraint firstAttribute="bottom" secondItem="2kl-6d-54J" secondAttribute="bottom" id="wTu-Pj-eoF"/>
+                                    <constraint firstItem="2kl-6d-54J" firstAttribute="top" secondItem="jLi-7I-tbD" secondAttribute="top" id="xKu-wt-bA5"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="OR1-0p-Kk9"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jLi-7I-tbD" secondAttribute="trailing" id="1Fw-Ul-l4A"/>
+                            <constraint firstItem="jLi-7I-tbD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="E38-hW-OeJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jLi-7I-tbD" secondAttribute="bottom" id="Gmf-I0-ssf"/>
+                            <constraint firstItem="jLi-7I-tbD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sbH-Wf-vQC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="KTR-Mb-hR1" id="rjm-uv-Pmc"/>
+                        <outlet property="imageView" destination="2kl-6d-54J" id="Hjo-ob-dYC"/>
+                        <outlet property="scrollView" destination="jLi-7I-tbD" id="lQS-ZS-j4g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
